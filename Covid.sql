@@ -1,10 +1,10 @@
--- Skill used --
+-- Skills used --
 -- Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Casting Data Types
 
 
 -- SECTION 1 --
 
---What percentage of people who tested positive for COVID died with it in Austria?
+--What percentage of people who tested positive for COVID-19 died with it in Austria?
 SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 AS death_pct
 FROM Covid..Covid
 WHERE location = 'Austria'
